@@ -15,11 +15,6 @@ highlight_code = true
 highlight_theme = "nord"
 
 
-[languages.fr]
-# No specific translations
-
-[languages.es]
-# No specific translations
 
 [extra]
 # Put all your custom variables here
