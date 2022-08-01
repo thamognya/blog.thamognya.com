@@ -1,7 +1,7 @@
-base_url = "https://blog.thamognya.com" # do NOT include a trailing slash on the base URL for web urls
+base_url = "https://abridge.netlify.app" # do NOT include a trailing slash on the base URL for web urls
 #base_url = "/home/jieiku/.dev/abridge/public/" # used for locally usable build directly from disk, also set below extra.uglyurls = true
-title = "Thamognya's Blog"
-description = "Hey my name is Thamognya Kodi, I am a HighSchool student who likes to code and use Gentoo."
+title = "Abridge"
+description = "Abridge is a fast and lightweight Zola theme using semantic html, abridge.css class-light CSS, and No JS."
 default_language = "en"
 output_dir = "public"
 compile_sass = true
@@ -43,10 +43,10 @@ language_code = "en-US"
 title_separator = "|"  # Separator between title and title_addition, set as |, -, _, etc
 # To disable title_addition but keep built in page additions eg, Posts page: "Posts | Abridge" set title_addition to an empty string
 # To always set the page title exactly eg "Abridge" then comment out the below line (not recommend, bad for SEO)
-title_addition = "Zola & Lightweight Zola Theme" # a default value for title addition
+title_addition = "Fast & Lightweight Zola Theme" # a default value for title addition
 recent = true # TOC / index
-recent_items = 5
-author = "Thamognya Kodi" # Put Your Name here
+recent_items = 9
+author = "Jake G" # Put Your Name here
 
 title_size_index = "s85" # size: s95, s90, s85, s80, s75, s70, false(full size)
 meta_index = { position="bottom", size="s90", author=false, readtime=false, readstring="min", date=true, categories_tags=true, divider=" " }
@@ -175,8 +175,8 @@ icon_top = "svgs svgh angu" # Back to Top Button.
 #    {url = "font/Roboto-Bold.woff2"},
 #]
 
-math = true# katex math js library, used to to render mathematical notations, requires javascript
-math_auto_render = true
+math = false # katex math js library, used to to render mathematical notations, requires javascript
+math_auto_render = false
 
 #katex_css = "https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.css" # Fonts - use remote fonts
 #katex_js = "https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.js"
@@ -194,8 +194,8 @@ katex_bundle = "katexbundle.min.js"
 ##########################
 # meta/seo/analytic tags
 ##########################
-keywords = "thamognya, Thamognya, Kodi, math, CS, machine learning, Coding" # used for the primary site index
-twitter = "thamognya" # used for twitter related
+keywords = "Abridge, Abridge.css, Zola, Theme, Zola Theme, getzola, Semantic Html, Fast, lightweight" # used for the primary site index
+twitter = "your-user-name" # used for twitter related
 #google = "Your Google Site verification code."
 #bing = "Your Bing Site verification code."
 seo = true  # enable or disable seo-related meta tags: opengraph, facebook, twitter
@@ -204,23 +204,23 @@ seo = true  # enable or disable seo-related meta tags: opengraph, facebook, twit
 [extra.social]
 feed = true
 mail_encode = true # This obfuscates your email address, javascript is used to decode it at page load.
-mail = "contact@thamognya.com"
-#mastodon = "@your-user-name"
-#element = "matrix.example.com"
+mail = "name@example.com"
+mastodon = "@your-user-name"
+element = "matrix.example.com"
 #matrix = "matrix.example.com"
-#buymeacoffee = "your-user-name"
-twitter = "thamognya"
-#facebook = "your-user-name"
-linkedin = "thamognya"
-gitlab = "thamognya"
-github = "thamognya"
-#github_sponsor = "your-user-name"
-#bitbucket = "your-user-name"
-#python = "your-user-name"
-#docker = "your-user-name"
-#stack = "your-user-name"
-instagram = "thamognya"
-#pinterest = "your-user-name"
-#twitch = "your-user-name"
-#youtube = "channel/your-channel-id"
-#researchgate = "your-profile-id"
+buymeacoffee = "your-user-name"
+twitter = "your-user-name"
+facebook = "your-user-name"
+linkedin = "your-user-name"
+gitlab = "your-user-name"
+github = "your-user-name"
+github_sponsor = "your-user-name"
+bitbucket = "your-user-name"
+python = "your-user-name"
+docker = "your-user-name"
+stack = "your-user-name"
+instagram = "your-user-name"
+pinterest = "your-user-name"
+twitch = "your-user-name"
+youtube = "channel/your-channel-id"
+researchgate = "your-profile-id"

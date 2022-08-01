@@ -1,9 +1,12 @@
-name = "abridge-inspired"
-license = "AGPL-3.0-or-later"
-homepage = "https://github.com/thamognya/abridge/"
+name = "abridge"
+description = "A fast and lightweight Zola theme using semantic html, a class-light abridge.css, and No JS."
+license = "MIT"
+homepage = "https://github.com/jieiku/abridge/"
+min_version = "0.16.0"
+demo = "https://abridge.netlify.app/"
 
 [extra]
 
 [author]
-name = "Thamognya Kodi"
-homepage = "https://github.com/thamognya/"
+name = "Jake G (jieiku)"
+homepage = "https://github.com/jieiku/"
