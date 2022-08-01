@@ -4,6 +4,24 @@ date = 2022-07-12
 description = "clang llvm lto musl gentoo system"
 +++
 
+# Important Note: 
+
+These were the tasks in which I failed and had to recompile again
+
+1) ACCEPT_KEYWORDS more like ACCEPT_SHOOTING_YOU_FOOT
+
+do not add the 
+
+```conf
+ACCEPT_KEYWORDS="~amd64"
+# or
+ACCEPT_KEYWORDS="~*"
+# or
+ACCEPT_KEYWORDS="**"
+
+
+```
+
 # Steps
 
 - firstly get started with the minimal installation cd
@@ -51,3 +69,4 @@ also follow the guide make a gcc fallback env and clang-no-lto
 musl is another standard c library that clang can compile while musl can not
 - while you are at it install clang in the method explained in the wiki.
 - while doing the clang/llvm genkernel use the options --kernel-cc to compile it with clang/llvm (look into gentoo wiki on clang for more info)
+

@@ -25,9 +25,10 @@ taxonomies = [
 ]
 
 social_media = [
-    {name = "GitHub", url = "https://github.com/Thamognya"},
-    {name = "GitLab", url = "https://gitlab.com/Thamognya"},
+    {name = "GitHub", url = "https://github.com/thamognya"},
+    {name = "GitLab", url = "https://gitlab.com/thamognya"},
     {name = "Gitea", url = "https://git.thamognya.com/Thamognya"},
+    {name = "Links", url = "https://links.thamognya.com"},
     {name = "website", url = "https://www.thamognya.com"},
     {name = "cv", url = "https://www.thamognya.com/cv.pdf"},
     {name = "Email", url = "mailto:contact@thamognya.com"},
