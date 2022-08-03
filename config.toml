@@ -27,7 +27,6 @@ zola386_menu = [
   {path="", name="Home"},
   {path="categories", name="Categories"},
   {path="tags", name="Tags"},
-  {path="about", name="About"},
 ]
 
 ### THIRD PARTY
@@ -39,7 +38,7 @@ image = "https://raw.githubusercontent.com/lopes/zola.386/master/screenshot.png"
 twitter_user = "thamognya"
 linkedin_user = "thamognya"
 github_user = "thamognya"
-# gitlab_user = ""
+gitlab_user = "thamognya"
 
 ### I18N WORDS
 label_tags = "Tags"

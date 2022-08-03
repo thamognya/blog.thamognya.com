@@ -3,7 +3,7 @@ title = "Template Doc"
 description = "Template document for other posts"
 date = 2022-05-02
 draft = false
-slug = "sem-nulla"
+slug = "template-doc"
 
 [taxonomies]
 categories = ["miscellaneous"]
