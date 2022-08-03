@@ -1,5 +1,9 @@
 //@import "fonts/Abridge";
-@import "fonts/Roboto";
+//@import "fonts/Roboto";
 //@import "fonts/Arimo";
 //@import "fonts/Lato";
-//@import "fonts/FiraCode"; // Monospaced
+@import "fonts/FiraCode"; // Monospaced
+@font-face {
+  font-family: "FiraCode";
+  src: url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+}
