@@ -1,17 +1,28 @@
-{% extends "index.html" %}
+{% extends "base.html" %}
 
-{% block title %}{{ config.title }} - {{ config.extra.label_categories }}{% endblock title %}
+{%- block seo %}
+  {{- super() }}
+  {%- set title = term.name ~ " category" %}
 
-{% block header %}
-<div class="page-header">
-  <h1>{{ config.extra.label_category }}: {{ term.name }}</h1>
-</div>
-{% endblock header %}
+  {%- if config.title %}
+    {%- set title_addition = title_separator ~ config.title %}
+  {%- else %}
+    {%- set title_addition = "" %}
+  {%- endif %}
 
-{% block main %}
-<ul>
-{% for page in term.pages %}
-  <li>{{ macro::post_min(page=page) }}</li>
-{% endfor %}
-</ul>
-{% endblock main %}
+  {%- set description = config.description %}
+
+  {{- macros_head::seo(title=title, title_addition=title_addition, description=description, is_home=true) }}
+{%- endblock seo %}
+
+{%- block content %}
+    <div>
+      <h2>{{ term.name }}</h2>
+      {%- for year, posts in term.pages | group_by(attribute="year") %}
+      <h3>{{ year }}</h3>
+      {%- for page in posts %}
+      <p><a href="{{ page.permalink | safe }}">{{ page.title }}</a> - <time datetime="{{ page.date }}">{{ page.date | date(format="%F") }}</time></p>
+      {%- endfor %}
+      {%- endfor %}
+    </div>
+{%- endblock content %}

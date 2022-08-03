@@ -1,19 +1,31 @@
-{% extends "index.html" %}
+{% extends "base.html" %}
 
-{% block title %}{{ config.title }} - {{ config.extra.label_tags }}{% endblock title %}
+{%- block seo %}
+  {{- super() }}
+  {%- set title = "Tags" %}
 
-{% block header %}
-<div class="page-header">
-  <h1>{{ config.extra.label_tags }}</h1>
-</div>
-{% endblock header %}
+  {%- if config.title %}
+    {%- set title_addition = title_separator ~ config.title %}
+  {%- else %}
+    {%- set title_addition = "" %}
+  {%- endif %}
 
-{% block main %}
-<ul>
-  {% for category in terms %}
-    <li>
-      <a href="{{ category.permalink }}">{{ category.name }}</a> ({{ category.pages | length }})
-    </li>
-  {% endfor %}
-  </ul>
-{% endblock main %}
+  {%- set description = config.description %}
+
+  {{- macros_head::seo(title=title, title_addition=title_addition, description=description, is_home=true) }}
+{%- endblock seo %}
+
+{%- block content %}
+    <div>
+      <div class="c">
+        <h1>{{ terms | length }} Tags</h1>
+        <p>{% for term in terms %} #<a href="#{{ term.name }}">{{ term.name }}</a> {% endfor %}</p>
+      </div>
+      {%- for term in terms %}
+      <h2 id="{{ term.name }}">#<a href="{{ term.permalink | safe }}">{{ term.name }}</a></h2>
+      {%- for page in term.pages %}
+      <p><a href="{{ page.permalink | safe }}">{{ page.title }}</a> - <time datetime="{{ page.date }}">{{ page.date | date(format="%F") }}</time></p>
+      {%- endfor %}
+      {%- endfor %}
+    </div>
+{%- endblock content %}
