@@ -1,7 +1,7 @@
 +++
 title = "Template Doc"
 description = "Template document for other posts"
-date = 08-03-2022
+date = 2022-08-03
 draft = false
 slug = "template-doc"
 
